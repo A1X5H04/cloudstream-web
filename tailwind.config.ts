@@ -1,3 +1,4 @@
+import { parkwindPlugin } from "@park-ui/tailwind-plugin";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,6 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       backgroundImage: {
@@ -15,6 +17,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [parkwindPlugin],
 };
 export default config;
